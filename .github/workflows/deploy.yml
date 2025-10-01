@@ -22,10 +22,9 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy to Main
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: main  # 直接部署到 main 分支
-          force_orphan: true    # 清理旧文件
+          publish_branch: gh-pages  # 部署到 gh-pages 分支
