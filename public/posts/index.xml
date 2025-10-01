@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on 我的学习博客</title>
+        <link>http://localhost:1313/posts/</link>
+        <description>Recent content in Posts on 我的学习博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-CN</language>
+        <lastBuildDate>Tue, 30 Sep 2025 14:42:42 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Articles01</title>
+        <link>http://localhost:1313/posts/articles01/</link>
+        <pubDate>Tue, 30 Sep 2025 14:42:42 +0800</pubDate>
+        
+        <guid>http://localhost:1313/posts/articles01/</guid>
+        <description>&lt;h1 id=&#34;这是我的第一篇博客文章&#34;&gt;这是我的第一篇博客文章
+&lt;/h1&gt;&lt;p&gt;不积跬步，无以至千里&lt;/p&gt;
+&lt;p&gt;不积小流，无以成江海&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

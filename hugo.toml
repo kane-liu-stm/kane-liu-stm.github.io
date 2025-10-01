@@ -1,0 +1,152 @@
+baseURL = 'https://kane-liu-stm.github.io/'
+title = '我的学习博客'
+theme = 'hugo-theme-stack'
+languageCode = 'zh-CN'
+defaultContentLanguage = 'zh-cn'
+
+# 分页配置（修复了弃用警告）
+[pagination]
+  pagerSize = 10
+
+[params]
+  # 网站描述
+  description = '这是我的学习博客，记录我的技术学习历程和成长点滴'
+  
+  # 作者信息 - 现在是一个对象，不是字符串
+  [params.author]
+    name = "lky"
+    image = "/images/avatar.png"  # 你可以稍后添加头像
+    # email = "your-email@example.com"  # 可选，如果有邮箱可以取消注释
+    bio = "热爱技术，持续学习，记录成长"
+  
+  # 网站关键词
+  keywords = ['学习', '编程', '技术', '博客', '笔记']
+  
+  # 主题样式 - 亮色模式
+  [params.style]
+    primaryColor = "#3B82F6"
+    backgroundColor = "#ffffff"
+    backgroundOpacity = 1
+    linkColor = "#3B82F6"
+    linkHoverColor = "#1E40AF"
+    bodyBackground = "#ffffff"
+    bodyColor = "#374151"
+    headerBackground = "#ffffff"
+    headerColor = "#111827"
+    footerBackground = "#f9fafb"
+    footerColor = "#6b7280"
+    cardBackground = "#ffffff"
+    cardColor = "#374151"
+
+  # 主题样式 - 深色模式
+  [params.style.dark]
+    primaryColor = "#60A5FA"
+    backgroundColor = "#111827"
+    backgroundOpacity = 1
+    linkColor = "#60A5FA"
+    linkHoverColor = "#93C5FD"
+    bodyBackground = "#111827"
+    bodyColor = "#d1d5db"
+    headerBackground = "#111827"
+    headerColor = "#f9fafb"
+    footerBackground = "#1f2937"
+    footerColor = "#9ca3af"
+    cardBackground = "#1f2937"
+    cardColor = "#d1d5db"
+
+  # 主页配置
+  [params.home]
+    showProfile = true
+    showPagination = true
+
+  # 个人资料配置
+  [params.profile]
+    enabled = true
+    title = "学习者"
+    imageWidth = 120
+    imageHeight = 120
+    description = "热爱技术，持续学习，记录成长"
+
+  # 侧边栏小部件配置
+  [params.widgets]
+    [params.widgets.about]
+      enabled = true
+      title = "关于我"
+      content = "一名热爱编程的学习者，在这里记录学习笔记和心得体会。"
+    
+    [params.widgets.featured]
+      enabled = true
+      title = "精选文章"
+    
+    [params.widgets.recent]
+      enabled = true
+      title = "最新文章"
+      numRecentPosts = 5
+    
+    [params.widgets.categories]
+      enabled = true
+      title = "分类"
+    
+    [params.widgets.tags]
+      enabled = true
+      title = "标签"
+    
+    [params.widgets.social]
+      enabled = true
+
+# 菜单配置
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 5
+
+# 社交媒体链接（根据你的实际情况修改）
+[social]
+  GitHub = "https://github.com/你的GitHub用户名"
+  # 你可以取消注释并填写以下你有的社交媒体
+  # Email = "mailto:your-email@example.com"
+  # Twitter = "https://twitter.com/yourusername"
+  # LinkedIn = "https://linkedin.com/in/yourusername"
+
+# 网站设置
+[services]
+  [services.googleAnalytics]
+    disable = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+
+# 输出配置 - 移除有问题的 RSS
+[outputs]
+  home = ["HTML", "JSON"]
+  page = ["HTML"]
